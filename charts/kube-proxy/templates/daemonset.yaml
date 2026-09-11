@@ -33,6 +33,7 @@ spec:
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      automountServiceAccountToken: {{ .Values.automountServiceAccountToken }}
       serviceAccountName: {{ include "kube-proxy.serviceAccountName" . }}
       {{- with .Values.podSecurityContext }}
       securityContext:
