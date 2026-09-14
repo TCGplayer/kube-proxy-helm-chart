@@ -14,6 +14,12 @@
 
 ## [UNRELEASED]
 
+## [v0.0.10] - 2026-09-11
+
+### Fixed
+
+- Explicitly set `automountServiceAccountToken` for the `DaemonSet` pod template and managed `ServiceAccount` to satisfy Gatekeeper validation.
+
 ## [v0.0.9] - 2026-02-10
 
 ### Changed
@@ -77,6 +83,7 @@
 RELEASE LINKS
 -->
 [UNRELEASED]: https://github.com/stevehipwell/helm-charts/tree/main/charts/kube-proxy
+[v0.0.10]: https://github.com/stevehipwell/helm-charts/releases/tag/kube-proxy-0.0.10
 [v0.0.9]: https://github.com/stevehipwell/helm-charts/releases/tag/kube-proxy-0.0.9
 [v0.0.8]: https://github.com/stevehipwell/helm-charts/releases/tag/kube-proxy-0.0.8
 [v0.0.7]: https://github.com/stevehipwell/helm-charts/releases/tag/kube-proxy-0.0.7

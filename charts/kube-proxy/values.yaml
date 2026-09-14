@@ -57,6 +57,9 @@ podLabels: {}
 # -- Annotations to add to the pod.
 podAnnotations: {}
 
+# -- Explicitly set service account token automounting for the pod and managed service account. Must stay false to satisfy the K8sPSPAutomountServiceAccountTokenPod Gatekeeper policy; the token is instead mounted via an explicit projected volume (see templates/daemonset.yaml) at the conventional path so the generated kubeconfig keeps working.
+automountServiceAccountToken: false
+
 # -- Security context for the pod.
 podSecurityContext:
   runAsNonRoot: false

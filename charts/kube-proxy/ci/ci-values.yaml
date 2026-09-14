@@ -3,3 +3,8 @@ image:
 
 apiServer:
   endpoint: 127.0.0.1
+
+config:
+  conntrack:
+    maxPerCore: 0
+    min: 0
