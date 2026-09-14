@@ -57,6 +57,7 @@ podLabels: {}
 # -- Annotations to add to the pod.
 podAnnotations: {}
 
+# -- Explicitly set service account token automounting for the pod and managed service account.
 automountServiceAccountToken: true
 
 # -- Security context for the pod.
